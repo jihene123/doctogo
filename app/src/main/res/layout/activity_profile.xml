@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/item_planning_logo_client"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="108dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_medecin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/item_planning_tel_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_tel"
+        app:layout_constraintEnd_toEndOf="@+id/item_planning_specialite_ic"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_planning_specialite_ic" />
+
+    <TextView
+        android:id="@+id/phoneEdit"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical"
+        android:text="telephone"
+        android:textColor="@color/colorBlack"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_planning_tel_ic"
+        app:layout_constraintTop_toBottomOf="@+id/specialiteEdit" />
+
+    <ImageView
+        android:id="@+id/item_planning_adresse_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_marker"
+        app:layout_constraintEnd_toEndOf="@+id/item_planning_tel_ic"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_planning_tel_ic" />
+
+    <TextView
+        android:id="@+id/addEdit"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="adresse"
+        android:gravity="center_vertical"
+
+        android:textColor="@color/colorBlack"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_planning_adresse_ic"
+        app:layout_constraintTop_toBottomOf="@+id/phoneEdit" />
+
+    <ImageView
+        android:id="@+id/item_planning_calendar_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_calendar"
+        app:layout_constraintEnd_toEndOf="@+id/item_planning_email_ic"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_planning_email_ic" />
+
+    <TextView
+        android:id="@+id/emailEdit"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical"
+        android:text="email"
+        android:textColor="@color/colorBlack"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_planning_email_ic"
+        app:layout_constraintTop_toBottomOf="@+id/addEdit" />
+
+    <ImageView
+        android:id="@+id/item_planning_email_ic"
+        android:layout_width="31dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_email_black_24dp"
+        app:layout_constraintEnd_toEndOf="@+id/item_planning_adresse_ic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_planning_adresse_ic" />
+
+    <TextView
+        android:id="@+id/prochDispoEdit"
+        android:layout_width="162dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+        android:text="prochaine disponibilité"
+
+        android:textColor="@color/colorBlack"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/dateDispoEdit"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toEndOf="@+id/item_planning_calendar_ic"
+        app:layout_constraintTop_toBottomOf="@+id/emailEdit" />
+
+    <ImageView
+        android:id="@+id/item_planning_specialite_ic"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_stars_black_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_planning_logo_client" />
+
+
+    <TextView
+        android:id="@+id/specialiteEdit"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical"
+        android:text="speacialite"
+        android:textColor="@color/colorBlack"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_planning_specialite_ic"
+        app:layout_constraintTop_toBottomOf="@+id/item_planning_logo_client" />
+
+    <Button
+        android:id="@+id/activity_main_search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/spinner_background"
+        android:padding="16dp"
+        android:text="Prendre un rendez-vous"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/dateDispoEdit"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+
+        android:text="date"
+        app:layout_constraintBottom_toTopOf="@+id/activity_main_search_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEdit"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <TextView
+        android:id="@+id/nomMedecinEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="nom Medecin"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/item_planning_logo_client"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

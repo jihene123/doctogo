@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Doctolib</string>
+
+    <string name="activity_authentification_label">Authentification</string>
+    <string name="activity_authentification_login">Login</string>
+    <string name="activity_authentification_password">Mot de passe</string>
+    <string name="activity_authentification_se_connecter">se connecter</string>
+    <string name="activity_menu_bnj">Bonjour</string>
+    <string name="label_chercher">Rechercher</string>
+</resources>
